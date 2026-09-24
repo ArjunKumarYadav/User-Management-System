@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS UL_database;
+USE UL_database;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    age INT,
+    gender VARCHAR(10)
+);
